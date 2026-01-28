@@ -1,0 +1,173 @@
+index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>BK Online SMA N 1 Pulau Rimau</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>BK Online SMA N 1 Pulau Rimau</h1>
+    <p>Layanan Bimbingan dan Konseling Online</p>
+</header>
+
+<nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#profil">Profil Konselor</a>
+    <a href="#layanan">Layanan BK</a>
+    <a href="#jadwal">Jadwal</a>
+    <a href="#konseling">Konseling Online</a>
+    <a href="#artikel">Artikel</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="beranda">
+    <h2>Selamat Datang</h2>
+    <p>
+        Website ini merupakan media layanan <strong>Bimbingan dan Konseling Online</strong>
+        SMA Negeri 1 Pulau Rimau yang aman, ramah siswa, dan menjunjung tinggi
+        <strong>kerahasiaan konseli</strong>.
+    </p>
+</section>
+
+<section id="profil">
+    <h2>Profil Konselor</h2>
+    <p><strong>Nama:</strong> Sutarmanto, M.Pd</p>
+    <p><strong>Jenjang:</strong> SMA (Kurikulum Merdeka)</p>
+    <p>Konselor berperan sebagai pendamping peserta didik dalam pengembangan
+       pribadi, sosial, belajar, dan karier.</p>
+</section>
+
+<section id="layanan">
+    <h2>Jenis Layanan BK</h2>
+    <ul>
+        <li>Konseling Pribadi</li>
+        <li>Konseling Sosial</li>
+        <li>Konseling Belajar</li>
+        <li>Konseling Karier</li>
+    </ul>
+</section>
+
+<section id="jadwal">
+    <h2>Jadwal Layanan BK</h2>
+    <p>Hari Senin – Jumat</p>
+    <p>Pukul 08.00 – 14.00 WIB</p>
+</section>
+
+<section id="konseling">
+    <h2>Form Konseling Online (Rahasia)</h2>
+    <form onsubmit="return kirimForm();">
+        <label>Nama Siswa</label>
+        <input type="text" required>
+
+        <label>Kelas</label>
+        <input type="text" required>
+
+        <label>Jenis Layanan</label>
+        <select required>
+            <option value="">-- Pilih --</option>
+            <option>Pribadi</option>
+            <option>Sosial</option>
+            <option>Belajar</option>
+            <option>Karier</option>
+        </select>
+
+        <label>Permasalahan</label>
+        <textarea required></textarea>
+
+        <label>
+            <input type="checkbox" required>
+            Saya menyetujui bahwa data ini bersifat rahasia dan hanya digunakan
+            untuk layanan konseling
+        </label>
+
+        <button type="submit">Kirim</button>
+    </form>
+</section>
+
+<section id="artikel">
+    <h2>Artikel Edukasi</h2>
+    <ul>
+        <li>Aman Bermedia Sosial</li>
+        <li>Kesehatan Mental Remaja</li>
+        <li>Etika Digital Pelajar</li>
+    </ul>
+</section>
+
+<section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: bk@sman1pulaurimau.sch.id</p>
+    <p>Instagram: @bk_sman1pulaurimau</p>
+</section>
+
+<footer>
+    <p>© 2025 BK Online SMA Negeri 1 Pulau Rimau</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+🎨 css/style.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f0f9f9;
+}
+
+header {
+    background: #2e8b8b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #e0f2f1;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #006666;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #2e8b8b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2e8b8b;
+    color: white;
+}
+
+⚙️ js/script.js
+function kirimForm() {
+    alert("Terima kasih. Permohonan konseling Anda telah dikirim dan bersifat rahasia.");
+    return false; // mencegah reload
+}
